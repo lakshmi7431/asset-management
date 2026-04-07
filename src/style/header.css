@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  background: #1e293b;
+  height: 15vh;
+  position: sticky;
+}
+
+.header-title {
+  color: rgb(239, 233, 233);
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ── + Create user — top-right, superuser only ── */
+.header-create-btn {
+  padding: 9px 20px;
+  background: #f5f0e8;
+  color: #0f0f0f;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: opacity 0.15s, transform 0.12s;
+  flex-shrink: 0;
+}
+
+.header-create-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.header-create-btn:active {
+  transform: translateY(0);
+}
+.header-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.header-user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-user-name {
+  color: #e2e8f0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.header-user-role {
+  color: #94a3b8;
+  font-size: 11px;
+  background: #334155;
+  padding: 2px 8px;
+  border-radius: 20px;
+}

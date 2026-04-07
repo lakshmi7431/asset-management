@@ -1,0 +1,68 @@
+/* assets.css */
+@import './pages.css';
+
+/* any assets-specific overrides go here */
+/* assets.css — asset-specific overrides only */
+
+/* type pills */
+.type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+.type-keyboard    { background: rgba(55,138,221,0.12); color: #85b7eb; }
+.type-monitor     { background: rgba(83,74,183,0.15);  color: #AFA9EC; }
+.type-laptop_stand{ background: rgba(239,159,39,0.15); color: #EF9F27; }
+
+/* assignment pill (separate from badge-assigned) */
+.assign-available { background: rgba(29,158,117,0.15); color: #5DCAA5; }
+.assign-assigned  { background: rgba(226,75,74,0.12);  color: #f09595; }
+
+/* row action icon buttons */
+.icon-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 0.5px solid #334155;
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: background 0.12s, color 0.12s;
+}
+.icon-btn:hover { background: rgba(255,255,255,0.06); color: #e2e8f0; }
+
+/* search bar */
+.asset-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.asset-search input {
+  max-width: 280px;
+  padding: 7px 12px;
+  background: #1e293b;
+  border: 0.5px solid #334155;
+  border-radius: 7px;
+  font-size: 13px;
+  color: #e2e8f0;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.asset-search input:focus { border-color: #1D9E75; }
+.asset-count {
+  margin-left: auto;
+  font-size: 12px;
+  color: #475569;
+}
+
+/* actions column alignment */
+.td-actions { text-align: right; }
+.td-actions .icon-btn + .icon-btn { margin-left: 4px; }

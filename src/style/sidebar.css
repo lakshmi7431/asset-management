@@ -1,0 +1,53 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px 12px;
+  width: 200px;
+  background-color: #334155;
+  height: 100vh;
+  overflow-y: auto;
+  flex-shrink: 0;
+  position:sticky;
+  top:0;
+}
+/* body, html {
+  height: 100%;
+  overflow: hidden;
+} */
+
+.sb-section-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #64748b;
+  padding: 0 10px;
+  margin-bottom: 8px;
+
+}
+
+.sb-btn {
+  width: 100%;
+  text-align: left;
+  padding: 11px 14px;
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  font-family: inherit;
+}
+
+.sb-btn:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: #e2e8f0;
+}
+
+.sb-btn.active {
+  background: rgba(255, 255, 255, 0.12);
+  color: #f1f5f9;
+  font-weight: 500;
+}

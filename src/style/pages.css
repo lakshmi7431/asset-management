@@ -1,0 +1,336 @@
+/* ─────────────────────────────────────────
+   pages.css
+   Shared styles for Roles, Organizations,
+   and Assets pages.
+   Import this in each page's CSS file.
+───────────────────────────────────────── */
+
+/* ── page wrapper ── */
+.page {
+  padding: 28px 32px;
+  max-width: 960px;
+}
+
+/* ── page header row ── */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #f1f5f9;
+  margin: 0;
+  gap:10px;
+}
+.list-assest{
+  display: flex;
+  padding-left: 30px;
+  /* gap: 10px; */
+  flex-wrap: wrap;
+  
+}
+.page-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  
+}
+
+/* ── buttons ── */
+.btn-primary {
+  padding: 8px 18px;
+  background-color: #1D9E75;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.btn-primary:hover:not(:disabled) {
+  opacity: 0.88;
+}
+
+.btn-primary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-outline {
+  padding: 8px 18px;
+  background-color: transparent;
+  color: #cbd5e1;
+  border: 0.5px solid #475569;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn-outline:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.07);
+  border-color: #94a3b8;
+}
+
+.btn-outline.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #94a3b8;
+  color: #f1f5f9;
+}
+
+.btn-ghost {
+  padding: 8px 18px;
+  background-color: transparent;
+  color: #94a3b8;
+  border: 0.5px solid #334155;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.btn-ghost:hover:not(:disabled) {
+  border-color: #475569;
+  color: #cbd5e1;
+}
+
+.btn-ghost:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ── banners ── */
+.error-banner {
+  background: rgba(226, 75, 74, 0.1);
+  border: 0.5px solid rgba(226, 75, 74, 0.3);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #f09595;
+  margin-bottom: 16px;
+}
+
+.info-banner {
+  background: rgba(55, 138, 221, 0.08);
+  border: 0.5px solid rgba(55, 138, 221, 0.25);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #85b7eb;
+  margin-bottom: 16px;
+}
+
+/* ── table ── */
+.table-wrap {
+  /* width:80vw; */
+  margin-top: 4px;
+  border: 0.5px solid #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.data-table th {
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #64748b;
+  background: #0f172a;
+  border-bottom: 0.5px solid #1e293b;
+}
+
+.data-table td {
+  padding: 11px 14px;
+  color: #e2e8f0;
+  border-bottom: 0.5px solid #18222d;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.td-muted {
+  color: #f1f3f6 !important;
+  font-size: 12px;
+}
+
+.td-mono {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  color: #94a3b8 !important;
+}
+
+.state-msg {
+  padding: 20px 16px;
+  color: #e1e4e8;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* ── badges ── */
+.badge {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.badge-free {
+  background: rgba(29, 158, 117, 0.15);
+  color: #5DCAA5;
+}
+
+.badge-assigned {
+  background: rgba(55, 138, 221, 0.15);
+  color: #85b7eb;
+}
+
+.badge-active {
+  background: rgba(29, 158, 117, 0.15);
+  color: #5DCAA5;
+}
+
+.badge-inactive {
+  background: rgba(226, 75, 74, 0.12);
+  color: #f09595;
+}
+
+.badge-condition-excellent {
+  background: rgba(29, 158, 117, 0.15);
+  color: #5DCAA5;
+}
+
+.badge-condition-good {
+  background: rgba(55, 138, 221, 0.12);
+  color: #85b7eb;
+}
+
+.badge-condition-fair {
+  background: rgba(239, 159, 39, 0.15);
+  color: #EF9F27;
+}
+
+.badge-condition-poor {
+  background: rgba(226, 75, 74, 0.12);
+  color: #f09595;
+}
+
+/* ── form card ── */
+.form-card {
+  background: #0f172a;
+  border: 0.5px solid #1e293b;
+  border-radius: 10px;
+  padding: 24px;
+  margin-top: 4px;
+  max-width: 600px;
+}
+
+.form-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f1f5f9;
+  margin: 0 0 20px;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.form-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.required {
+  color: #f09595;
+}
+
+.form-input {
+  background: #1e293b;
+  border: 0.5px solid #334155;
+  border-radius: 7px;
+  padding: 10px 13px;
+  font-size: 13px;
+  color: #e2e8f0;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-input::placeholder {
+  color: #475569;
+}
+
+.form-input:focus {
+  border-color: #1D9E75;
+}
+
+.form-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2364748b' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+  padding-right: 34px;
+  cursor: pointer;
+}
+
+.form-select option {
+  background: #101722;
+  color: #f7f0f0;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+/* ── asset log note ── */
+.log-note {
+  padding: 10px 14px;
+  font-size: 12px;
+  color: #475569;
+  background: #0f141e;
+  border-bottom: 0.5px solid #1e293b;
+}
+.main-content {
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+}
